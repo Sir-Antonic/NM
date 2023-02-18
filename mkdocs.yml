@@ -1,21 +1,21 @@
-# official tutorial 
+# official tutorial
 # mkdocs-material: https://squidfunk.github.io/mkdocs-material/
 # mkdocs: https://www.mkdocs.org/user-guide/configuration/
 
-site_name: Foam-mkdocs-template
+site_name: Antonic's No Mercy Corner
 theme:
   name: material
   #  favicon: attachment/portrait.png
-  language: zh # 中文，解决中文搜索问题
+  language: en # 中文，解决中文搜索问题
   features:
-    - navigation.expand 
-    - tabs 
-markdown_extensions: 
+    - navigation.expand
+    - tabs
+markdown_extensions:
   - attr_list # https://squidfunk.github.io/mkdocs-material/reference/images/
   - pymdownx.tabbed  # https://squidfunk.github.io/mkdocs-material/reference/content-tabs/
-  - nl2br # newline-to-break 
+  - nl2br # newline-to-break
   - toc:
-      permalink: '#' # heading anchor 
+      permalink: '#' # heading anchor
       slugify: !!python/name:pymdownx.slugs.uslugify # 解决中文标题解析问题
   - admonition
   - codehilite:
@@ -41,8 +41,8 @@ markdown_extensions:
   - pymdownx.tilde
 plugins:
   - search
-  - roamlinks 
-    #- autolinks 
+  - roamlinks
+    #- autolinks
   - exclude:
       glob:
         - "*.tmp"
